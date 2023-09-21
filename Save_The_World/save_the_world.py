@@ -33,7 +33,7 @@ monster.shape("mon.gif")
 monster.penup()
 monster.speed(0)
 # thiet lap vi tri random cho quai vat
-monster.setposition(random.randint(-300, 300), random.randint(-300, 300))
+monster.setposition(random.randint(-300, 300), random.randint(-200, 200))
 
 # thiet lap cac ham di chuyen
 speed = 1
@@ -85,7 +85,7 @@ while True:
         from turtle import *
         pencolor('red')
         hideturtle()
-        write("YOU WIN!", align="center", font=("Cooper Black", 25, "italic"))
+        write("YOU WIN!\nYou Lost"  , align="center", font=("Cooper Black", 25, "italic"))
         break
     # thiet lap quai vat di chuyen
     monster.forward(6)
